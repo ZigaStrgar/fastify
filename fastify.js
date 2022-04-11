@@ -1,6 +1,6 @@
 'use strict'
 
-const VERSION = '4.0.0-alpha.2'
+const VERSION = '4.0.0-alpha.3'
 
 const Avvio = require('avvio')
 const http = require('http')
@@ -171,6 +171,7 @@ function fastify (options) {
       ignoreTrailingSlash: options.ignoreTrailingSlash || defaultInitOptions.ignoreTrailingSlash,
       maxParamLength: options.maxParamLength || defaultInitOptions.maxParamLength,
       caseSensitive: options.caseSensitive,
+      allowUnsafeRegex: options.allowUnsafeRegex || defaultInitOptions.allowUnsafeRegex,
       buildPrettyMeta: defaultBuildPrettyMeta
     },
     keepAliveConnections
